@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Échafaudages Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Menu -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="image/Gecko-Logo.png" alt="Logo Gecko" class="logo-img">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#prestations">Prestations</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#contact">079 321 63 33</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Bandeau principal -->
+  <section id="accueil" class="hero">
+    <div class="hero-images">
+      <div class="hero-img-container">
+        <img src="image/echaf1.JPG" alt="Échafaudage 1" class="hero-img">
+        <div class="hero-img-overlay">
+          <p>Construction, promotion, de la villa à l'immeuble en passant par les halls industrielles</p>
+        </div>
+      </div>
+      <div class="hero-img-container">
+        <img src="image/echaf6.JPG" alt="Échafaudage 6" class="hero-img">
+        <div class="hero-img-overlay">
+          <p>Rénovation de toiture, de façade ou pose de panneau solaire.</p>
+        </div>
+      </div>
+      <div class="hero-img-container">
+        <img src="image/echaf3.JPG" alt="Échafaudage 3" class="hero-img">
+        <div class="hero-img-overlay">
+          <p>Immeuble locatif ou bâtiment industriel, Gecko sait s'adapter à votre demande</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1>GECKO Echafaudages</h1>
+      <p>Rénovation, construction, industrie — Entreprise valaisanne</p>
+      <a href="#contact" class="btn">Demander un devis</a>
+    </div>
+  </section>
+
+  <!-- Prestations -->
+  <section id="prestations" class="section">
+    <h2>Nos prestations</h2>
+    <ul class="list">
+      <li>Échafaudages de façade</li>
+      <li>Échafaudages roulants et mobiles</li>
+      <li>Montage rapide pour rénovations</li>
+      <li>Location avec transport</li>
+    </ul>
+  </section>
+
+  <!-- Réalisations -->
+  <section id="realisations" class="section">
+    <h2>Nos réalisations</h2>
+    <div class="gallery">
+      <video autoplay loop muted playsinline>
+        <source src="video/villa.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
+      <video autoplay loop muted playsinline>
+        <source src="video/immeuble.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
+      <video autoplay loop muted playsinline>
+        <source src="video/industrie.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contactez-nous</h2>
+    <div class="contact-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/abcxyz123" method="POST">
+          <label>Nom prénom<br><input type="text" name="nom" required /></label><br>
+          <label>Email<br><input type="email" name="email" required /></label><br>
+          <label>Message<br><textarea name="message" required></textarea></label><br>
+          <input type="text" name="_gotcha" style="display:none">
+          <button type="submit" class="btn">Envoyer</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <div class="contact-logo">
+          <img src="image/Gecko-Logo.png" alt="Logo Gecko" class="contact-logo-img">
+        </div>
+        <p>Route de Savièse 25<br>1965 Savièse</p>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2725.4982456633726!2d7.3428673!3d46.9201249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e9b60a4168bdb%3A0x758d0cf6ee0a8be!2sRte%20de%20Savi%C3%A8se%2025%2C%201965%20Savi%C3%A8se%2C%20Suisse!5e0!3m2!1sfr!2sch!4v1621234567890!5m2!1sfr!2sch" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-copyright">
+        &copy; 2025 Gecko-Echafaudages — Tous droits réservés
+      </div>
+      <div class="footer-contact">
+        <div class="footer-item">079 321 63 33</div>
+        <div class="footer-item"><a href="mailto:info@gecko-echafaudages.ch">info@gecko-echafaudages.ch</a></div>
+        <div class="footer-item"><a href="https://www.instagram.com/gecko.echafaudages/" target="_blank" class="instagram-link">Instagram</a></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
