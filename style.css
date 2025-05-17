@@ -150,6 +150,17 @@
   .hero-content p {
     font-size: 20px;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .flag-img {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    border-radius: 2px;
   }
   .btn {
     background: #0077cc;
@@ -422,6 +433,10 @@
     
     .hero-content p {
       font-size: 16px;
+    }
+    
+    .flag-img {
+      height: 15px; /* Drapeau plus petit sur mobile */
     }
     
     /* Prestations responsive */
