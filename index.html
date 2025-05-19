@@ -87,17 +87,64 @@
     </div>
   </section>
 
+  <!-- Projets -->
+  <section id="projets" class="section section-light">
+    <div class="projects-grid">
+      <!-- Grandes vignettes -->
+      <div class="project-item">
+        <div class="project-image-container">
+          <img src="image/real/echaf1.JPG" alt="Projet d'échafaudage" class="project-image random-image">
+        </div>
+        <div class="project-caption">Pour tous les types de façade</div>
+      </div>
+      
+      <div class="project-item">
+        <div class="project-image-container">
+          <img src="image/real/echaf2.JPG" alt="Projet d'échafaudage" class="project-image random-image">
+        </div>
+        <div class="project-caption">Solutions techniques pour sites industriels</div>
+      </div>
+      
+      <!-- Slogan au centre -->
+      <div class="slogan-container">
+        <h3 class="slogan">Qualifié, qualité, sécurité</h3>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+      
+      <!-- Petites vignettes -->
+      <div class="project-item small-project">
+        <div class="project-image-container">
+          <img src="image/real/echaf3.JPG" alt="Projet d'échafaudage" class="project-image random-image">
+        </div>
+        <div class="project-caption">
+          <strong>Sécurité garantie sur tous nos chantiers</strong>
+          <p>Nous respectons scrupuleusement les normes de sécurité édictées par la SUVA.</p>
+        </div>
+      </div>
+      
+      <div class="project-item small-project">
+        <div class="project-image-container">
+          <img src="image/real/echaf4.JPG" alt="Projet d'échafaudage" class="project-image random-image">
+        </div>
+        <div class="project-caption">
+          <strong>A votre écoute</strong>
+          <p>Un technicien qualifié se déplacera pour vous accompagner dans votre projet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact -->
   <section id="contact" class="section">
     <h2>Contactez-nous</h2>
     <div class="contact-container">
       <div class="contact-form">
-        <form action="https://formspree.io/f/abcxyz123" method="POST">
-          <label>Nom prénom<br><input type="text" name="nom" required /></label><br>
-          <label>Email<br><input type="email" name="email" required /></label><br>
-          <label>Message<br><textarea name="message" required></textarea></label><br>
-          <input type="text" name="_gotcha" style="display:none">
+        <form id="contact-form">
+          <label>Nom prénom<br><input type="text" id="nom" name="nom" required /></label><br>
+          <label>Email<br><input type="email" id="email" name="email" required /></label><br>
+          <label>Message<br><textarea id="message" name="message" required></textarea></label><br>
           <button type="submit" class="btn">Envoyer</button>
+          <p id="confirmation" style="display: none; color: green; margin-top: 15px;">Merci pour votre message. Nous vous répondrons rapidement.</p>
         </form>
       </div>
       <div class="contact-info">
@@ -133,5 +180,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

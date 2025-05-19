@@ -183,8 +183,8 @@
     max-width: 1000px;
     margin: auto;
   }
-  .section-light {
-    background: #f0f0f0;
+.section-light {
+    background: white;
   }
   .section h2 {
     text-align: center;
@@ -256,6 +256,92 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     object-fit: cover;
     height: 300px;
+  }
+  
+  /* Projets */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .project-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .project-image-container {
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-item:hover .project-image {
+    transform: scale(1.05);
+  }
+  
+  .project-caption {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+    background-color: white;
+  }
+  
+  .slogan-container {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: #0077cc;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .slogan {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+.small-project {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .small-project .project-image-container {
+    height: 180px;
+    width: 33%;
+    flex-shrink: 0;
+  }
+  
+  .small-project .project-caption {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 20px;
   }
   
   /* Contact */
@@ -463,6 +549,20 @@
     /* Contact responsive */
     .contact-container {
       flex-direction: column;
+    }
+    
+    /* Projets responsive */
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .slogan-container {
+      grid-column: 1;
+      margin: 20px 0;
+    }
+    
+    .project-image-container {
+      height: 200px;
     }
     
     /* Footer responsive */
